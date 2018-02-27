@@ -4,14 +4,17 @@ PODS:
     - Parse/Core (= 1.16.0)
   - Parse/Core (1.16.0):
     - Bolts/Tasks (~> 1.9)
+  - Parse/UI (1.16.0):
+    - Parse/Core
 
 DEPENDENCIES:
   - Parse
+  - Parse/UI
 
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Parse: 5b36dc2c2f0a2fd82a257ae018bc3d68cf2c24e7
 
-PODFILE CHECKSUM: d87b9263cd3bc1becbab73e49041a9603a3297c5
+PODFILE CHECKSUM: 74d0b6a593c454471d71f097e278d3832ce82a05
 
 COCOAPODS: 1.4.0
