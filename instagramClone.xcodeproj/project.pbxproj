@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		21E62AADAEF63111E6F7747F /* Pods_instagramClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B016C0AD9CE440AA191BA65 /* Pods_instagramClone.framework */; };
 		303A376CFD68EEBA9E8FC3BC /* Pods_instagramCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1779AF59AC92F91E0BA2AB /* Pods_instagramCloneTests.framework */; };
+		5A865AC6204631FD00358C5E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A865AC5204631FD00358C5E /* DetailViewController.swift */; };
 		5AAEB27320455A1E00384E51 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAEB27220455A1E00384E51 /* PostCell.swift */; };
 		5AAEB27420455A9A00384E51 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AAEB27520455A9A00384E51 /* Parse.framework */; };
 		5AB2486C2045065700D9617C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2486B2045065700D9617C /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		228AFB36727562E23DD016C4 /* Pods-instagramClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instagramClone/Pods-instagramClone.debug.xcconfig"; sourceTree = "<group>"; };
+		5A865AC5204631FD00358C5E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5AAEB271204558E600384E51 /* Parse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Parse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AAEB27220455A1E00384E51 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		5AAEB27520455A9A00384E51 /* Parse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Parse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				5AB2489920450AAC00D9617C /* LoginViewController.swift */,
+				5A865AC5204631FD00358C5E /* DetailViewController.swift */,
 				5AB2489E20451C9B00D9617C /* HomeViewController.swift */,
 				5AB248A020451CA400D9617C /* CaptureViewController.swift */,
 				5AB248A220451CB400D9617C /* ProfileViewController.swift */,
@@ -496,6 +499,7 @@
 				5AB2486C2045065700D9617C /* AppDelegate.swift in Sources */,
 				5AB2489F20451C9B00D9617C /* HomeViewController.swift in Sources */,
 				5AB248A72045381700D9617C /* Post.swift in Sources */,
+				5A865AC6204631FD00358C5E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,12 +7,28 @@
 //
 
 import UIKit
+import Parse
 
 class DetailViewController: UIViewController {
+    
+    var post: PFObject?
 
+    @IBOutlet weak var imageView: PFImageView!
+    @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var timestampLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.imageView.file = post!["media"] as? PFFile
+        self.captionLabel.text = post!["caption"] as? String
+        let createDate = post?.createdAt
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let dateString = dateFormatter.string(from:createDate as! Date)
+        self.timestampLabel.text = dateString
+        self.imageView.loadInBackground()
         // Do any additional setup after loading the view.
     }
 

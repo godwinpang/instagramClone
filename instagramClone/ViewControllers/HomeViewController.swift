@@ -25,6 +25,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(HomeViewController.didPullToRefresh(_:)), for: .valueChanged)
         tableView.insertSubview(refreshControl, at: 0)
+        self.refresh()
         
         // Do any additional setup after loading the view.
     }
@@ -75,6 +76,14 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 print("\(String(describing: error?.localizedDescription))")
             }
         }
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell){
+            let post = posts![indexPath.row]
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.post = post
+        }
     }
 }
